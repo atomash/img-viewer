@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="imgViewer/imgViewer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="root"></div>
+
+    <script src="imgViewer/imgViewer.js"></script>
+
+    <script>
+      new ImgViewer({
+        imgs: [
+          {
+            title: 'test',
+            src: 'https://www.imgonline.com.ua/examples/rose-mini.jpg'
+          },
+          {
+            title: 'test1',
+            src:
+              'https://www.imgonline.com.ua/examples/bee-on-daisy-blurred.jpg'
+          },
+          {
+            title: 'test3',
+            src:
+              'https://artcopyright.interartive.org/sites/default/files/default_images/IMG-1984-01.jpg'
+          }
+        ],
+        render: document.querySelector('.root')
+      });
+    </script>
+  </body>
+</html>
